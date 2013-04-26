@@ -1,4 +1,4 @@
 htmless
 =======
 
-Expressive, robust, feature-rich HTML language built for nodejs
+Expressive, robust, feature-rich dynamic  HTML language built for nodejs
