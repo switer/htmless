@@ -5,16 +5,29 @@
 		@user {
 			value = width:100px;height:200px;
 			attr = true
-			<!--  -->
 			name
-				div .hello.class #name (style, @value) (data-value, @attr)
+				<!-- 
+					<div class="hello class" id="name" style="width:100px;height:200px;" data-value='true'>
+						<div>this is child <br /> </div>
+						<input />
+					</div>
+					</body>
+					</html>
+				 -->
+				div .hello.class #name (style = @value) (data-value = @attr)
 					div
-
-					div
-				div
-			<!--  -->
+						this is child text !!!!
+						br
+					!input <!-- single tag -->
+				!body <!-- single tag -->
+				!html
+				
+			template
 			tag
-				section .nav #nav (style, @value)
+				section .nav #nav (style, @value) (name, 'myname')
+				<!--
+					<section class="nav" id="nav" name="myname"></section> 
+				 -->
 		}
 		@index = 'this is index'
 	}
@@ -23,9 +36,8 @@
 <body>
 	<div>
 		@user.name
-		@user.tag[value=@index, style="top:0;"]
+		@user.tag[value = @index, style = "top:0;"]
 	</div>
 	<div>@index</div>
 </body>
 </html>
-
