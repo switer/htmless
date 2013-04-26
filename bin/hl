@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+var program = require('commander'),
+	chiProc = require('child_process'),
+	currentPath = encodeURIComponent(process.cwd());
+
+program
+  .version('0.0.0')
+  .usage('hl <file ...>')
+  .parse(process.argv);

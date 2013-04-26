@@ -1,0 +1,23 @@
+{
+  "name": "htmless",
+  "version": "0.0.0",
+  "description": "Expressive, robust, feature-rich dynamic HTML language built for nodejs",
+  "main": "bin/hl",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/switer/htmless.git"
+  },
+  "keywords": [
+    "dynamic",
+    "html",
+    "language",
+    "nodejs"
+  ],
+  "author": "switer",
+  "license": "BSD",
+  "gitHead": "621bc16ad7acc21844bb45aba859fa383de04f76",
+  "readmeFilename": "README.md"
+}
