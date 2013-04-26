@@ -1,22 +1,24 @@
-@user {
-	value = width:100px;height:200px;
-	attr = true
-	<!--  -->
-	name
-		div .hello.class #name (style, @value) (data-value, @attr)
-			div
-
-			div
-		div
-	<!--  -->
-	tag
-		section .nav #nav (style, @value)
-}
-@index = 'this is index'
 <html>
 <head>
 	<title></title>
-	@@source:./hls/external.hl
+	@htmless {
+		@user {
+			value = width:100px;height:200px;
+			attr = true
+			<!--  -->
+			name
+				div .hello.class #name (style, @value) (data-value, @attr)
+					div
+
+					div
+				div
+			<!--  -->
+			tag
+				section .nav #nav (style, @value)
+		}
+		@index = 'this is index'
+	}
+	@@source = ./htmless/external.hl
 </head>
 <body>
 	<div>
