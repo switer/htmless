@@ -12,18 +12,4 @@
 	tag
 		section .nav #nav (style, @value)
 }
-@index:'this is index'
-<html>
-<head>
-	<title></title>
-	@@source:./hls/external.hl
-</head>
-<body>
-	<div>
-		@user.name
-		@user.tag[value=@index, style="top:0;"]
-	</div>
-	<div>@index</div>
-</body>
-</html>
-
+@index = this is index
