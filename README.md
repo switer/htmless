@@ -70,3 +70,12 @@ Expressive, robust, feature-rich dynamic  HTML language built for nodejs
 
 ### 渲染
 
+```
+<body>
+	<div>
+		{@user.name*5}
+		{@user.tag[value = @index, style = @user.name_space.value]*2}
+	</div>
+	<div>@index</div>
+</body>
+```
