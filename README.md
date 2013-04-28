@@ -2,3 +2,71 @@ htmless
 =======
 
 Expressive, robust, feature-rich dynamic  HTML language built for nodejs
+
+### 变量定义
+
+```
+<!-- global_name_space -->
+  @htmless {
+		<!-- global variable -->
+		@user {
+			value = width:100px;height:200px;
+			attr = true
+			number = 123123
+			@name_space {
+				value = @user.value
+			}
+			name
+				<!-- 
+					<div class="hello class" id="name" style="width:100px;height:200px;" data-value='true'>
+						<div>this is child <br /> </div>
+						<input />
+						<br />
+					</div>
+					</body>
+					</html>
+				 -->
+				div .hello.class #name (style = @value) (data-value = @attr)
+					div
+						this is child text !!!!
+						br
+					input
+					br
+				!body <!-- closing tag -->
+				!html
+			tag
+				section .nav #nav (style, @value) (name, 'myname')
+				<!--
+					<section class="nav" id="nav" name="myname"></section> 
+				 -->
+			<!-- not compiled content -->
+			pure::
+				<html>
+				<head>
+					<title>hello this is html</title>
+				</head>
+				<body>
+
+				</body>
+				</html>
+			<!-- jade template content -->
+			<!-- not compiled content -->
+			template::
+				div#foo.bar.baz
+				div.user-details
+				p
+				  | foo bar baz
+				  | rawr rawr
+				  | super cool
+				  | go jade go
+
+		}
+		index = 'this is index'
+	}
+	@source {
+		./htmless/external.hl
+	}
+```
+
+### 渲染
+
