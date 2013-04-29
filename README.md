@@ -3,7 +3,7 @@ htmless
 
 Expressive, robust, feature-rich dynamic  HTML language built for nodejs
 
-### 变量定义
+### Definition
 
 ```
 <!-- global_name_space -->
@@ -68,7 +68,7 @@ Expressive, robust, feature-rich dynamic  HTML language built for nodejs
 	}
 ```
 
-### 渲染
+### Render
 
 ```
 <body>
