@@ -5,7 +5,7 @@ Expressive, feature-rich dynamic  HTML language built for nodejs
 
 ### Definition
 
-```
+```html
 <!-- global_name_space -->
   @htmless {
 		<!-- global variable -->
@@ -70,7 +70,7 @@ Expressive, feature-rich dynamic  HTML language built for nodejs
 
 ### Render
 
-```
+```html
 <body>
 	<div>
 		{@user.name*5}
