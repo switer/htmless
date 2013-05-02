@@ -6,8 +6,8 @@ Expressive, feature-rich dynamic  HTML language built for nodejs
 ### Definition
 
 ```html
-<!-- global_name_space -->
-  @htmless {
+        <!-- global_name_space -->
+	@htmless {
 		<!-- global variable -->
 		@user {
 			value = width:100px;height:200px;
